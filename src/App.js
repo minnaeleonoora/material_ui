@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import './Header/Header';
-import './Main/Main';
-import './Footer/Footer';
+import Header from './Components/Header';
+import AutoGrid from './Components/AutoGrid';
+import 'typeface-roboto';
 
-function App() {
+
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      
+    <div>
+     <Header />
+     <AutoGrid />
     </div>
   );
+}
 }
 
 export default App;
