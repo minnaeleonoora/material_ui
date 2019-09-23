@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Buttons from '../Components/Buttons';
-import CustomizedCheckbox from '../Components/CustomizedCheckbox';
+import CheckboxLabels from '../Components/CustomizedCheckbox';
 import RadioButtons from '../Components/RadioButtons';
 import InputWithIcon from '../Components/InputWithIcon';
 import ImgMediaCard from '../Components/ImgMediaCard';
@@ -32,25 +32,27 @@ export default function AutoGrid() {
       <Grid container spacing={3}>
         <Grid item xs={3}>
           <Paper className={classes.paper}><FolderList /></Paper>
-        </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}><ImgMediaCard /></Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}><RadioButtons /></Paper>
-          <Paper className={classes.paper}><CustomizedCheckbox /></Paper>
           <Paper className={classes.paper}><Buttons/></Paper>
 
         </Grid>
-      </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}><SvgIcons /></Paper>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}><ImgMediaCard /></Paper>
+          <Paper className={classes.paper}><RadioButtons /></Paper>
+
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
+          <Paper className={classes.paper}><ImgMediaCard /></Paper>
+          <Paper className={classes.paper}><CheckboxLabels /></Paper>
+
+        </Grid>
+        <Grid item xs={3}>
         <Paper className={classes.paper}><InputWithIcon /></Paper>
         </Grid>
-        </Grid>
+       
+      </Grid>
+      
+        
+        
     </div>
   );
 }

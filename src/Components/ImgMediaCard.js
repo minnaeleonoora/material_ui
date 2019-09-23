@@ -7,6 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Photo from './lizard2.jpeg';
+
 
 const useStyles = makeStyles({
   card: {
@@ -23,8 +25,8 @@ export default function ImgMediaCard() {
         <CardMedia
           component="img"
           alt="Contemplative Reptile"
-          height="140"
-          image="lizard.jpeg"
+          height="200"
+          image={Photo}
           title="Contemplative Reptile"
         />
         <CardContent>
@@ -48,3 +50,4 @@ export default function ImgMediaCard() {
     </Card>
   );
 }
+
